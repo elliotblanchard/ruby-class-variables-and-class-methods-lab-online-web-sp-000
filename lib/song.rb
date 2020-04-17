@@ -28,4 +28,17 @@ class Song
     @@artists.uniq
   end
 
+  def genre_count
+    genre_hash = {}
+    current_count = 0
+
+    @@genres.each do |value|
+      if genre_hash.key?(value)
+        current_count = genre_hash[key]
+        current_count += 1
+        genre_hash[key] => current_count
+      else
+        genre_hash[key] => 1
+    end
+  end
 end
