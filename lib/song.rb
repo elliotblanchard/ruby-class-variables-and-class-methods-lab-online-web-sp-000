@@ -39,6 +39,8 @@ class Song
         genre_hash[key] => current_count
       else
         genre_hash[key] => 1
+      end
+      genre_hash
     end
   end
 end
