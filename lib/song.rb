@@ -36,9 +36,9 @@ class Song
       if genre_hash.key?(value)
         current_count = genre_hash[key]
         current_count += 1
-        genre_hash[key] => current_count
+        genre_hash[key] = current_count
       else
-        genre_hash[key] => 1
+        genre_hash[key] = 1
       end
       genre_hash
     end
